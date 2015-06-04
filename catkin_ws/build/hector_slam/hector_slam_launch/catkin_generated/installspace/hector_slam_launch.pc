@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/install
+
+Name: hector_slam_launch
+Description: Description of hector_slam_launch
+Version: 0.3.3
+Cflags: 
+Libs: -L/home/trevor/ROS/catkin_ws/install/lib 
+Requires: 

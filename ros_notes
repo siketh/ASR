@@ -1,0 +1,70 @@
+
+Useful Things:
+
+Exit Node Execution:
+Ctrl + C
+
+Install ROS Package:
+sudo apt-get install ros-indigo-<PKG>
+
+Print Topic Outut:
+rostopic echo [topic]
+
+Display Graph of Connected Topics:
+rosrun rqt_graph rqt_graph
+
+Show List of Published and Subscribed Topics:
+rostopic list -v
+
+Topic Type:
+rostopic type [topic]
+
+Publish Data to an Advertized Topic
+rostopic pub [topic] [msg_type] [args]
+
+EX) rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+
+Services: Node can send request and receive response
+rosservice list         print information about active services
+rosservice call         call the service with the provided args
+rosservice type         print service type
+rosservice find         find services by service type
+rosservice uri          print service ROSRPC uri
+
+Parameters: Store and manipulate data on parameter server
+rosparam set            set parameter
+rosparam get            get parameter
+rosparam load           load parameters from file
+rosparam dump           dump parameters to file
+rosparam delete         delete parameter
+rosparam list           list parameter names
+
+Console Style Debugging:
+rosrun rqt_console rqt_console
+rosrun rqt_logger_level rqt_logger_level
+
+Roslaunch: Launch nodes specified in a launch file
+mkdir launch
+cd launch
+roslaunch [package] [filename.launch]
+
+Rosed: Edit a file within a package directly
+rosed [package_name] [filename]
+
+msg: 
+
+msg files are simple text files that describe the fields of a ROS message. They are used to generate source code for messages in different languages
+
+msg files are stored in the msg directory of a package, and srv files are stored in the srv directory.
+
+msgs are just simple text files with a field type and field name per line. The field types you can use are:
+
+srv: 
+
+an srv file describes a service. It is composed of two parts: a request and a response.
+
+srv files are just like msg files, except they contain two parts: a request and a response. The two parts are separated by a '---' line.
+
+
+
+

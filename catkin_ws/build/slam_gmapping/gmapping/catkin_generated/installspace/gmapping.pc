@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/install
+
+Name: gmapping
+Description: Description of gmapping
+Version: 1.3.5
+Cflags: 
+Libs: -L/home/trevor/ROS/catkin_ws/install/lib 
+Requires: 

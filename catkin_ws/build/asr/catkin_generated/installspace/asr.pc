@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/install
+
+Name: asr
+Description: Description of asr
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/trevor/ROS/catkin_ws/install/lib 
+Requires: 

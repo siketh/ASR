@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/devel
+
+Name: hector_imu_attitude_to_tf
+Description: Description of hector_imu_attitude_to_tf
+Version: 0.3.3
+Cflags: 
+Libs: -L/home/trevor/ROS/catkin_ws/devel/lib 
+Requires: 

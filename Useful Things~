@@ -1,0 +1,45 @@
+
+Useful Things:
+
+Exit Node Execution:
+Ctrl + C
+
+Install ROS Package:
+sudo apt-get install ros-indigo-<PKG>
+
+Print Topic Outut:
+rostopic echo [topic]
+
+Display Graph of Connected Topics:
+rosrun rqt_graph rqt_graph
+
+Show List of Published and Subscribed Topics:
+rostopic list -v
+
+Topic Type:
+rostopic type [topic]
+
+Publish Data to an Advertized Topic
+rostopic pub [topic] [msg_type] [args]
+
+EX) rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+
+Services: Node can send request and receive response
+rosservice list         print information about active services
+rosservice call         call the service with the provided args
+rosservice type         print service type
+rosservice find         find services by service type
+rosservice uri          print service ROSRPC uri
+
+Parameters: Store and manipulate data on parameter server
+rosparam set            set parameter
+rosparam get            get parameter
+rosparam load           load parameters from file
+rosparam dump           dump parameters to file
+rosparam delete         delete parameter
+rosparam list           list parameter names
+
+Console Style Debugging:
+rosrun rqt_console rqt_console
+rosrun rqt_logger_level rqt_logger_level
+
