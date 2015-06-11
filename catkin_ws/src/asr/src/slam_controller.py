@@ -7,11 +7,19 @@ from std_msgs.msg import String
 mapping = "False"
 
 
-def callback(data):
-    global mapping
+def state_callback(data):
+    if data.data == "Shutdown":
+        rospy.signal_shutdown(shutdown_hook())
 
+
+def mapping_callback(data):
+    global mapping
     mapping = data.data
     rospy.loginfo("Mapping: %s", mapping)
+
+
+def shutdown_hook():
+    rospy.loginfo("SHUTDOWN COMMAND RECEIVED - SLAM SYSTEM SHUTTING DOWN")
 
 
 def slam_controller():
@@ -19,7 +27,8 @@ def slam_controller():
 
     rospy.init_node('slam_controller', anonymous=False)
 
-    mapping_sub = rospy.Subscriber("mapping_active", String, callback, queue_size=10)
+    state_sub = rospy.Subscriber("current_state", String, state_callback, queue_size=10)
+    mapping_sub = rospy.Subscriber("mapping_active", String, mapping_callback, queue_size=10)
 
     rate = rospy.Rate(10) # 10hz
 
