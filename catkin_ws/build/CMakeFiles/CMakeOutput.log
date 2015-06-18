@@ -320,3 +320,26 @@ int main(int argc, char** argv)
 #endif
 }
 
+The target system is: Linux - 3.16.0-38-generic - x86_64
+The host system is: Linux - 3.16.0-38-generic - x86_64
+Determining if the include file FL/Fl.H exists passed with the following output:
+Change Dir: /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2944645154/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2944645154.dir/build.make CMakeFiles/cmTryCompileExec2944645154.dir/build
+make[1]: Entering directory `/home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2944645154.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec2944645154.dir/CheckIncludeFile.cxx.o -c /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTryCompileExec2944645154
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2944645154.dir/link.txt --verbose=1
+/usr/bin/c++     -Wno-deprecated     CMakeFiles/cmTryCompileExec2944645154.dir/CheckIncludeFile.cxx.o  -o cmTryCompileExec2944645154 -rdynamic 
+make[1]: Leaving directory `/home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+The target system is: Linux - 3.16.0-38-generic - x86_64
+The host system is: Linux - 3.16.0-38-generic - x86_64
+The target system is: Linux - 3.16.0-38-generic - x86_64
+The host system is: Linux - 3.16.0-38-generic - x86_64
+The target system is: Linux - 3.16.0-38-generic - x86_64
+The host system is: Linux - 3.16.0-38-generic - x86_64

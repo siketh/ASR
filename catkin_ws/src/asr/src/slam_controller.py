@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-import rospy
+import rospy, os, signal, subprocess
 from std_msgs.msg import String
 
 
 mapping = "False"
-
+slam_process = False
 
 def state_callback(data):
     if data.data == "Shutdown":
@@ -15,15 +15,20 @@ def state_callback(data):
 def mapping_callback(data):
     global mapping
     mapping = data.data
-    rospy.loginfo("Mapping: %s", mapping)
+ 
 
 
 def shutdown_hook():
-    rospy.loginfo("SHUTDOWN COMMAND RECEIVED - SLAM SYSTEM SHUTTING DOWN")
+    print("\n...SYSTEM SHUTTING DOWN...")
+
+    if slam_process is not False:
+        os.killpg(slam_process.pid, signal.SIGTERM)
 
 
 def slam_controller():
-    global mapping
+    global mapping, slam_process
+    slam_cmd = "roslaunch asr asr_mapping.launch"
+    launched = False
 
     rospy.init_node('slam_controller', anonymous=False)
 
@@ -32,18 +37,21 @@ def slam_controller():
 
     rate = rospy.Rate(10) # 10hz
 
-    rospy.loginfo("SLAM NODE INITIATED\nMapping: %s", mapping)
+    print("********** [SLAM CONTROLLER] **********")
 
     while not rospy.is_shutdown():
+        if mapping == "True" and launched == False:
+            print("\nINITIATING SLAM")
+            slam_process = subprocess.Popen(slam_cmd, stdout=subprocess.PIPE, shell=True, preexec_fn=os.setsid)
+            launched = True
+        if mapping == "False" and launched == True:
+            print("\nQUITTING SLAM")
+            os.killpg(slam_process.pid, signal.SIGTERM)
+            slam_process = False
+            launched = False
         if mapping == "True":
-            rospy.loginfo("PERFORMING SLAM")
-
-            if mapping == "False":
-                rospy.loginfo("EXITING SLAM")
-
-            rate.sleep()
-
-    rate.sleep()
+            print("Performing SLAM...")
+        rate.sleep()
 
 
 if __name__ == '__main__':

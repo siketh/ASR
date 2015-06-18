@@ -3,12 +3,7 @@
 import os
 
 def asr():
-    os.system
-    os.system("cd")
-    os.system("cd ROS/catkin_ws")
-    os.system("catkin_make")
-    os.system("source devel/setup.bash")
-    os.system("xterm -hold -e roscore & roslaunch asr.launch")
+    os.system("gnome-terminal cd ~/ROS/scripts & ./asr.sh")
 
 if __name__ == '__main__':
     asr()

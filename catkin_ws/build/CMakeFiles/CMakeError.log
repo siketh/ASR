@@ -147,3 +147,21 @@ int main(int argc, char** argv)
 #endif
 }
 
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec431086549/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec431086549.dir/build.make CMakeFiles/cmTryCompileExec431086549.dir/build
+make[1]: Entering directory `/home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec431086549.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec431086549.dir/CheckIncludeFile.cxx.o -c /home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: No such file or directory
+ #include <pgm.h>
+                 ^
+compilation terminated.
+make[1]: Leaving directory `/home/trevor/ROS/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec431086549.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTryCompileExec431086549/fast] Error 2
+
+
