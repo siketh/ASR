@@ -2,7 +2,7 @@ export PATH="$PATH:~/scripts"
 
 clear
 
-echo "*** [INITIALIZING ASR] ***"
+echo "***************** INITIALIZING ASR *****************"
 
 sudo bash -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'
 

@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" line="25" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="18800ed7-e8f3-4dec-9bbf-8deade97e1c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/hector_slam" afterPath="$PROJECT_DIR$/catkin_ws/src/hector_slam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeError.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/CMakeRuleHashes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/installspace/_setup_util.py" afterPath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/installspace/_setup_util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/_setup_util.py" afterPath="$PROJECT_DIR$/catkin_ws/devel/_setup_util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/asr.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/asr.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/asr.sh" afterPath="$PROJECT_DIR$/scripts/asr.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/installspace/asrConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/installspace/asrConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/asr/cmake/asrConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/asr/cmake/asrConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/gtest/CMakeFiles/gtest.dir/depend.make" afterPath="$PROJECT_DIR$/catkin_ws/build/gtest/CMakeFiles/gtest.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/generate_cached_setup.py" afterPath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/generate_cached_setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/slam_gmapping/gmapping/catkin_generated/installspace/gmappingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/slam_gmapping/gmapping/catkin_generated/installspace/gmappingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/gmapping/cmake/gmappingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/gmapping/cmake/gmappingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/catkin_generated/installspace/hector_compressed_map_transportConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/catkin_generated/installspace/hector_compressed_map_transportConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_compressed_map_transport/cmake/hector_compressed_map_transportConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_compressed_map_transport/cmake/hector_compressed_map_transportConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_geotiff/catkin_generated/installspace/hector_geotiffConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_geotiff/catkin_generated/installspace/hector_geotiffConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_geotiff/cmake/hector_geotiffConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_geotiff/cmake/hector_geotiffConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_geotiff_plugins/catkin_generated/installspace/hector_geotiff_pluginsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_geotiff_plugins/catkin_generated/installspace/hector_geotiff_pluginsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_geotiff_plugins/cmake/hector_geotiff_pluginsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_geotiff_plugins/cmake/hector_geotiff_pluginsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_imu_attitude_to_tf/catkin_generated/installspace/hector_imu_attitude_to_tfConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_imu_attitude_to_tf/catkin_generated/installspace/hector_imu_attitude_to_tfConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_imu_attitude_to_tf/cmake/hector_imu_attitude_to_tfConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_imu_attitude_to_tf/cmake/hector_imu_attitude_to_tfConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_imu_tools/catkin_generated/installspace/hector_imu_toolsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_imu_tools/catkin_generated/installspace/hector_imu_toolsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_imu_tools/cmake/hector_imu_toolsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_imu_tools/cmake/hector_imu_toolsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_map_server/catkin_generated/installspace/hector_map_serverConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_map_server/catkin_generated/installspace/hector_map_serverConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_map_server/cmake/hector_map_serverConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_map_server/cmake/hector_map_serverConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_map_tools/catkin_generated/installspace/hector_map_toolsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_map_tools/catkin_generated/installspace/hector_map_toolsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_map_tools/cmake/hector_map_toolsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_map_tools/cmake/hector_map_toolsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_mapping/catkin_generated/installspace/hector_mappingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_mapping/catkin_generated/installspace/hector_mappingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_mapping/cmake/hector_mappingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_mapping/cmake/hector_mappingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_marker_drawing/catkin_generated/installspace/hector_marker_drawingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_marker_drawing/catkin_generated/installspace/hector_marker_drawingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_marker_drawing/cmake/hector_marker_drawingConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_marker_drawing/cmake/hector_marker_drawingConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_nav_msgs/catkin_generated/installspace/hector_nav_msgsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_nav_msgs/catkin_generated/installspace/hector_nav_msgsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_nav_msgs/cmake/hector_nav_msgsConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_nav_msgs/cmake/hector_nav_msgsConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_slam_launch/catkin_generated/installspace/hector_slam_launchConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_slam_launch/catkin_generated/installspace/hector_slam_launchConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_slam_launch/cmake/hector_slam_launchConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_slam_launch/cmake/hector_slam_launchConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_trajectory_server/catkin_generated/installspace/hector_trajectory_serverConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_trajectory_server/catkin_generated/installspace/hector_trajectory_serverConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/share/hector_trajectory_server/cmake/hector_trajectory_serverConfig.cmake" afterPath="$PROJECT_DIR$/catkin_ws/devel/share/hector_trajectory_server/cmake/hector_trajectory_serverConfig.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/order_packages.py" afterPath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/order_packages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/setup_cached.sh" afterPath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/setup_cached.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ROS.iws" />
@@ -80,21 +41,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="motion_testing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="slam_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="motion_testing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="asr.launch" pinned="false" current-in-tab="true">
+      <file leaf-file-name="asr.launch" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14729951">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,20 +77,8 @@
         <entry file="file://$PROJECT_DIR$/scripts/asr.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slam_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#59#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,6 +95,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="trevor" />
         <option value="siketh" />
       </list>
     </option>
@@ -147,8 +109,9 @@
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/asr.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" />
+        <option value="$PROJECT_DIR$/scripts/asr.sh" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" />
       </list>
     </option>
   </component>
@@ -156,9 +119,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
+    <option name="x" value="52" />
     <option name="y" value="52" />
-    <option name="width" value="923" />
+    <option name="width" value="913" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -214,6 +177,17 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -370,14 +344,19 @@
       <option name="project" value="LOCAL" />
       <updated>1434060019361</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented command-line like instructions and output">
+      <created>1434592802332</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1434592802332</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="52" width="923" height="1027" extended-state="4" />
-    <editor active="true" />
+    <frame x="52" y="52" width="913" height="1027" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -391,7 +370,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -436,7 +416,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implemented command-line like instructions and output" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -807,13 +789,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#59#0" expanded="true" />
-          </folding>
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/asr.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -827,26 +815,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/asr.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14729951">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
       </provider>
