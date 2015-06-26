@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH="/home/trevor/ROS/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/trevor/ROS/catkin_ws/devel/lib:/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/home/trevor/ROS/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/trevor/ROS/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/trevor/ROS/catkin_ws/build"

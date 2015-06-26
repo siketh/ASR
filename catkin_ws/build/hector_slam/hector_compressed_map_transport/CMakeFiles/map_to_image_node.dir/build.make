@@ -123,6 +123,7 @@ map_to_image_node_EXTERNAL_OBJECTS =
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/local/lib/libopencv_viz.so.3.0.0
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/local/lib/libopencv_videostab.so.3.0.0
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/local/lib/libopencv_videoio.so.3.0.0
 /home/trevor/ROS/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node: /usr/local/lib/libopencv_video.so.3.0.0

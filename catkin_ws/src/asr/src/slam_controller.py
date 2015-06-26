@@ -4,9 +4,6 @@ import rospy, os, signal, subprocess
 from std_msgs.msg import String
 
 
-mapping = "False"
-slam_process = False
-
 def state_callback(data):
     if data.data == "Shutdown":
         rospy.signal_shutdown(shutdown_hook())
@@ -29,6 +26,8 @@ def slam_controller():
     global mapping, slam_process
     slam_cmd = "roslaunch asr asr_mapping.launch"
     launched = False
+    mapping = "False"
+    slam_process = False
 
     rospy.init_node('slam_controller', anonymous=False)
 
