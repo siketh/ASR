@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18800ed7-e8f3-4dec-9bbf-8deade97e1c6" name="Default" comment="motion detection prototype">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_testing.py" afterPath="" />
+    <list default="true" id="18800ed7-e8f3-4dec-9bbf-8deade97e1c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/hector_slam" afterPath="$PROJECT_DIR$/catkin_ws/src/hector_slam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node" afterPath="$PROJECT_DIR$/catkin_ws/devel/lib/hector_compressed_map_transport/map_to_image_node" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/catkin_ws/build/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/build.make" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/link.txt" afterPath="$PROJECT_DIR$/catkin_ws/build/hector_slam/hector_compressed_map_transport/CMakeFiles/map_to_image_node.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/package.cmake" afterPath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/package.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/stamps/asr/package.xml.stamp" afterPath="$PROJECT_DIR$/catkin_ws/build/asr/catkin_generated/stamps/asr/package.xml.stamp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/package.xml" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/package.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/setup_cached.sh" afterPath="$PROJECT_DIR$/catkin_ws/build/catkin_generated/setup_cached.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ROS.iws" />
@@ -555,7 +542,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435251047182</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="motion detection ros integration">
+      <created>1435286490168</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1435286490168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -619,7 +612,8 @@
     <MESSAGE value="State Manager + SLAM Controller shutdown capabilities" />
     <MESSAGE value="Implemented command-line like instructions and output" />
     <MESSAGE value="motion detection prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="motion detection prototype" />
+    <MESSAGE value="motion detection ros integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="motion detection ros integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
