@@ -35,7 +35,7 @@ def motion_callback(data):
     except CvBridgeError, e:
         print e
 
-    img_index = img_index + 1
+    img_index += 1
 
     if img_index == 10:
         img_index = 0

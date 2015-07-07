@@ -2,12 +2,13 @@
 
 import rospy, os
 from std_msgs.msg import String
+from std_msgs.msg import Bool
 
-mapping = "False"
-navigation = "False"
-autonomous = "False"
-manual = "False"
-motion_detection = "False"
+mapping = False
+navigation = False
+autonomous = False
+manual = False
+motion_detection = False
 command = "Standby"
 sys_comm = ""
 
@@ -18,19 +19,19 @@ def command_parser(cmd):
     last_cmd = command
 
     if cmd == "map -m" and last_cmd == "Standby":
-        mapping = "True"
-        navigation = "True"
-        motion_detection = "False"
-        autonomous = "False"
-        manual = "True"
+        mapping = True
+        navigation = True
+        motion_detection = False
+        autonomous = False
+        manual = True
         return "Manual Mapping"
 
     if cmd == "map -a" and last_cmd == "Standby":
-        mapping = "True"
-        navigation = "True"
-        motion_detection = "False"
-        autonomous = "True"
-        manual = "False"
+        mapping = True
+        navigation = True
+        motion_detection = False
+        autonomous = True
+        manual = False
         return "Autonomous Mapping"
 
     if cmd == "map -s":
@@ -44,35 +45,35 @@ def command_parser(cmd):
         return last_cmd
 
     if cmd == "patrol -m" and last_cmd == "Standby":
-        mapping = "False"
-        navigation = "True"
-        motion_detection = "True"
-        autonomous = "False"
-        manual = "True"
+        mapping = False
+        navigation = True
+        motion_detection = True
+        autonomous = False
+        manual = True
         return "Manual Patrol"
 
     if cmd == "patrol -a" and last_cmd == "Standby":
-        mapping = "False"
-        navigation = "True"
-        motion_detection = "True"
-        autonomous = "True"
-        manual = "False"
+        mapping = False
+        navigation = True
+        motion_detection = True
+        autonomous = True
+        manual = False
         return "Autonomous Patrol"
 
     if cmd == "standby":
-        mapping = "False"
-        navigation = "False"
-        motion_detection = "False"
-        autonomous = "False"
-        manual = "False"
+        mapping = False
+        navigation = False
+        motion_detection = False
+        autonomous = False
+        manual = False
         return "Standby"
 
     if cmd == "shutdown":
-        mapping = "False"
-        navigation = "False"
-        motion_detection = "False"
-        autonomous = "False"
-        manual = "False"
+        mapping = False
+        navigation = False
+        motion_detection = False
+        autonomous = False
+        manual = False
         return "Shutdown"
 
     if cmd == "help":
@@ -88,12 +89,12 @@ def command_parser(cmd):
 def print_state():
     global mapping, motion_detection, autonomous, manual, command
 
-    print("\nCurrent State:          " + command)
-    print("    Autonomous:         " + autonomous)
-    print("    Manual:             " + manual)
-    print("    Mapping:            " + mapping)
-    print("    Navigation:         " + navigation)
-    print("    Motion Detection:   " + motion_detection)
+    print("\nCurrent State:          " + str(command))
+    print("    Autonomous:         " + str(autonomous))
+    print("    Manual:             " + str(manual))
+    print("    Mapping:            " + str(mapping))
+    print("    Navigation:         " + str(navigation))
+    print("    Motion Detection:   " + str(motion_detection))
 
 
 def print_usage():
@@ -115,11 +116,11 @@ def state_manager():
     rospy.init_node('state_manager', anonymous=False)
 
     state_pub = rospy.Publisher('current_state', String, queue_size=10)
-    mapping_pub = rospy.Publisher('mapping_active', String, queue_size=10)
-    nav_pub = rospy.Publisher('nav_active', String, queue_size=10)
-    md_pub = rospy.Publisher('md_active', String, queue_size=10)
-    autonomous_pub = rospy.Publisher('autonomous_active', String, queue_size=10)
-    manual_pub = rospy.Publisher('manual_active', String, queue_size=10)
+    mapping_pub = rospy.Publisher('mapping_active', Bool, queue_size=10)
+    nav_pub = rospy.Publisher('nav_active', Bool, queue_size=10)
+    md_pub = rospy.Publisher('md_active', Bool, queue_size=10)
+    autonomous_pub = rospy.Publisher('autonomous_active', Bool, queue_size=10)
+    manual_pub = rospy.Publisher('manual_active', Bool, queue_size=10)
     sys_pub = rospy.Publisher('syscommand', String, queue_size=10)
 
     rate = rospy.Rate(10)  # 10hz
