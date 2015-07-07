@@ -95,7 +95,7 @@ def motion_detector():
     alert_pub = rospy.Publisher("/user_alerts", String, queue_size=10)
     motion_pub = rospy.Publisher("/motion_image", Image, queue_size=10)
 
-    rate = rospy.Rate(60) # 120hz
+    rate = rospy.Rate(10) # 120hz
 
     while camera_img is None:
         print "Waiting for camera frames..."

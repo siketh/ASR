@@ -13,9 +13,11 @@ sys_comm = ""
 
 
 def command_parser(cmd):
-    global mapping, navigation, autonomous, manual, motion_detection, sys_comm, command
+    global mapping, navigation, autonomous, manual, motion_detection, sys_comm
 
-    if cmd == "map -m":
+    last_cmd = command
+
+    if cmd == "map -m" and last_cmd == "Standby":
         mapping = "True"
         navigation = "True"
         motion_detection = "False"
@@ -23,7 +25,7 @@ def command_parser(cmd):
         manual = "True"
         return "Manual Mapping"
 
-    if cmd == "map -a":
+    if cmd == "map -a" and last_cmd == "Standby":
         mapping = "True"
         navigation = "True"
         motion_detection = "False"
@@ -34,14 +36,14 @@ def command_parser(cmd):
     if cmd == "map -s":
         print("\nSAVING MAP...")
         os.system("rosrun map_server map_saver -f /home/trevor/ROS/catkin_ws/src/asr/maps/asr_map && echo '\n'")
-        return command
+        return last_cmd
 
     if cmd == "map -r":
         print("\nRESETTING MAP...")
         sys_comm = "reset"
-        return command
+        return last_cmd
 
-    if cmd == "patrol -m":
+    if cmd == "patrol -m" and last_cmd == "Standby":
         mapping = "False"
         navigation = "True"
         motion_detection = "True"
@@ -49,12 +51,12 @@ def command_parser(cmd):
         manual = "True"
         return "Manual Patrol"
 
-    if cmd == "patrol -a":
+    if cmd == "patrol -a" and last_cmd == "Standby":
         mapping = "False"
         navigation = "True"
         motion_detection = "True"
-        autonomous = "False"
-        manual = "True"
+        autonomous = "True"
+        manual = "False"
         return "Autonomous Patrol"
 
     if cmd == "standby":
@@ -73,9 +75,14 @@ def command_parser(cmd):
         manual = "False"
         return "Shutdown"
 
+    if cmd == "help":
+        print("\n**************************** HELP ****************************")
+        print_usage()
+        return last_cmd
     else:
-        print("\nInvalid command, valid commands are:\n\tmap -m\n\tmap -a\n\tmap -s\n\tmap -r\n\tpatrol -m\n\tpatrol -a\n\tstandby\n\tshutdown")
-        return command
+        print("\n************************ USAGE ERROR *************************")
+        print_usage()
+        return last_cmd
 
 
 def print_state():
@@ -87,6 +94,15 @@ def print_state():
     print("    Mapping:            " + mapping)
     print("    Navigation:         " + navigation)
     print("    Motion Detection:   " + motion_detection)
+
+
+def print_usage():
+    print("USAGE:")
+    print("1) User must execute 'standby' command before switching states")
+    print("2) User must enter only valid commands")
+    print("   Valid commands are:\n\tmap -m\n\tmap -a\n\tmap -s\n\tmap -r\n\tpatrol -m\n\tpatrol -a"
+          "\n\tstandby\n\tshutdown\n\thelp")
+    print("****************************************************************")
 
 
 def shutdown_hook():
@@ -108,7 +124,8 @@ def state_manager():
 
     rate = rospy.Rate(10)  # 10hz
 
-    print("*********** [STATE MANAGER] ***********")
+    print("************************** ASR ONLINE **************************")
+    print_usage()
 
     print_state()
 
