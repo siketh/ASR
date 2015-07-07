@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan" args="image:=/camera/depth/image_raw"/>
+
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find asr)/rviz_cfg/asr_mapping.rviz"/>
+
+<include file="$(find hector_mapping)/launch/mapping_default.launch"/>  
+
+</launch>

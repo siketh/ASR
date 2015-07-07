@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "global_planner")
+set(global_planner_MAINTAINER "David V. Lu!! <davidvlu@gmail.com>, Michael Ferguson <mferguson@fetchrobotics.com>")
+set(global_planner_DEPRECATED "")
+set(global_planner_VERSION "1.13.0")
+set(global_planner_BUILD_DEPENDS "angles" "costmap_2d" "dynamic_reconfigure" "geometry_msgs" "nav_core" "nav_msgs" "navfn" "pluginlib" "roscpp" "tf")
+set(global_planner_RUN_DEPENDS "costmap_2d" "dynamic_reconfigure" "geometry_msgs" "nav_core" "nav_msgs" "navfn" "pluginlib" "roscpp" "tf")
+set(global_planner_BUILDTOOL_DEPENDS "catkin")

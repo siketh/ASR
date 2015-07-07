@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/devel
+
+Name: fake_localization
+Description: Description of fake_localization
+Version: 1.13.0
+Cflags: 
+Libs: -L/home/trevor/ROS/catkin_ws/devel/lib 
+Requires: roscpp rospy

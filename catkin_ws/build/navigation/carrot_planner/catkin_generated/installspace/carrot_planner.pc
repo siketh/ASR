@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/install
+
+Name: carrot_planner
+Description: Description of carrot_planner
+Version: 1.13.0
+Cflags: -I/home/trevor/ROS/catkin_ws/install/include
+Libs: -L/home/trevor/ROS/catkin_ws/install/lib -lcarrot_planner
+Requires: roscpp pluginlib costmap_2d base_local_planner nav_core

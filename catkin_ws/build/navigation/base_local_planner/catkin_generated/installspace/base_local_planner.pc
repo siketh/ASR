@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/install
+
+Name: base_local_planner
+Description: Description of base_local_planner
+Version: 1.13.0
+Cflags: -I/home/trevor/ROS/catkin_ws/install/include
+Libs: -L/home/trevor/ROS/catkin_ws/install/lib -lbase_local_planner -ltrajectory_planner_ros
+Requires: roscpp dynamic_reconfigure message_generation tf pluginlib costmap_2d nav_core angles

@@ -54,13 +54,6 @@ def track_motion(t_b_img, bgr_img):
         except CvBridgeError, e:
             print e
 
-        #cv2.imwrite("/home/trevor/ROS/catkin_ws/src/asr/pictures/motion_" + str(img_index) + ".png", final_img)
-
-        #if img_index == 4:
-        #    img_index = 0
-        #else:
-        #    img_index += 1
-
     else:
         alert_pub.publish("ALL QUIET: " + str(now))
         final_img = cv2.putText(bgr, str(now), (25,25), 1, 1, (0, 255, 0), 2)

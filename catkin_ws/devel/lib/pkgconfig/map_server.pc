@@ -1,0 +1,8 @@
+prefix=/home/trevor/ROS/catkin_ws/devel
+
+Name: map_server
+Description: Description of map_server
+Version: 1.13.0
+Cflags: -I/home/trevor/ROS/catkin_ws/src/navigation/map_server/include
+Libs: -L/home/trevor/ROS/catkin_ws/devel/lib -lmap_server_image_loader
+Requires: roscpp tf nav_msgs
