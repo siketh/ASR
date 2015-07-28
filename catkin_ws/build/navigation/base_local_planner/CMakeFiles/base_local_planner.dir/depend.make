@@ -15,6 +15,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_mode
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o: /opt/ros/indigo/include/ros/assert.h
@@ -587,6 +588,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseWithCovariance.h
@@ -863,6 +865,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planne
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseWithCovariance.h
@@ -1568,6 +1571,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cos
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o: /opt/ros/indigo/include/ros/assert.h
@@ -2060,6 +2064,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.c
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/assert.h
@@ -2497,6 +2502,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_m
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/ros/assert.h

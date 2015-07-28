@@ -32,8 +32,8 @@ def slam_controller():
 
     rospy.init_node('slam_controller', anonymous=False)
 
-    state_sub = rospy.Subscriber("current_state", String, state_callback, queue_size=10)
-    mapping_sub = rospy.Subscriber("mapping_active", Bool, mapping_callback, queue_size=10)
+    rospy.Subscriber("current_state", String, state_callback, queue_size=10)
+    rospy.Subscriber("mapping_active", Bool, mapping_callback, queue_size=10)
 
     rate = rospy.Rate(10) # 10hz
 
@@ -44,13 +44,16 @@ def slam_controller():
             print("\nINITIATING SLAM")
             slam_process = subprocess.Popen(slam_cmd, stdout=subprocess.PIPE, shell=True, preexec_fn=os.setsid)
             launched = True
+
         if mapping == False and launched == True:
             print("\nQUITTING SLAM")
             os.killpg(slam_process.pid, signal.SIGTERM)
             slam_process = False
             launched = False
+
         if mapping == True:
             print("Performing SLAM...")
+
         rate.sleep()
 
 

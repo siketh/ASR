@@ -61,6 +61,7 @@ navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indi
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h
@@ -72,6 +73,13 @@ navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indi
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/map_msgs/OccupancyGridUpdate.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseAction.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionFeedback.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionGoal.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionResult.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseFeedback.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseGoal.h
+navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseResult.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h

@@ -16,6 +16,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/costmap_mode
  /opt/ros/indigo/include/geometry_msgs/Point.h
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/ros/advertise_options.h
  /opt/ros/indigo/include/ros/advertise_service_options.h
  /opt/ros/indigo/include/ros/assert.h
@@ -588,6 +589,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/PointStamped.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/geometry_msgs/Pose.h
  /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
  /opt/ros/indigo/include/geometry_msgs/PoseWithCovariance.h
@@ -864,6 +866,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planne
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/PointStamped.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/geometry_msgs/Pose.h
  /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
  /opt/ros/indigo/include/geometry_msgs/PoseWithCovariance.h
@@ -1569,6 +1572,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/obstacle_cos
  /opt/ros/indigo/include/geometry_msgs/Point.h
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/ros/advertise_options.h
  /opt/ros/indigo/include/ros/advertise_service_options.h
  /opt/ros/indigo/include/ros/assert.h
@@ -2061,6 +2065,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/point_grid.c
  /opt/ros/indigo/include/geometry_msgs/Point.h
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/ros/advertise_options.h
  /opt/ros/indigo/include/ros/advertise_service_options.h
  /opt/ros/indigo/include/ros/assert.h
@@ -2498,6 +2503,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_m
  /opt/ros/indigo/include/geometry_msgs/Point.h
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/ros/advertise_options.h
  /opt/ros/indigo/include/ros/advertise_service_options.h
  /opt/ros/indigo/include/ros/assert.h

@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/trevor/ROS/catkin_ws/src/slam_gmapping/gmapping/src/main.cpp
-ros/ros.h
--
-slam_gmapping.h
-/home/trevor/ROS/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.h
-
 /home/trevor/ROS/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp
 slam_gmapping.h
 /home/trevor/ROS/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.h
@@ -549,10 +543,6 @@ boost/signals2/connection.hpp
 -
 macros.h
 /opt/ros/indigo/include/message_filters/macros.h
-
-/opt/ros/indigo/include/message_filters/macros.h
-ros/macros.h
--
 
 /opt/ros/indigo/include/message_filters/signal1.h
 boost/noncopyable.hpp

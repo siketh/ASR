@@ -40,6 +40,7 @@ navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clea
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/src/clear_costmap_recovery.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h

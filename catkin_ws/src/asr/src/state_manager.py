@@ -9,12 +9,14 @@ navigation = False
 autonomous = False
 manual = False
 motion_detection = False
+capture = False
 command = "Standby"
 sys_comm = ""
+timer = 0.0
 
 
 def command_parser(cmd):
-    global mapping, navigation, autonomous, manual, motion_detection, sys_comm
+    global mapping, navigation, autonomous, manual, motion_detection, sys_comm, capture, timer
 
     last_cmd = command
 
@@ -35,13 +37,29 @@ def command_parser(cmd):
         return "Autonomous Mapping"
 
     if cmd == "map -s":
-        print("\nSAVING MAP...")
-        os.system("rosrun map_server map_saver -f /home/trevor/ROS/catkin_ws/src/asr/maps/asr_map && echo '\n'")
+        if mapping is True:
+            print("\nSAVING MAP...")
+            os.system("rosrun map_server map_saver -f /home/trevor/ROS/catkin_ws/src/asr/maps/asr_map && echo '\n'")
+        else:
+            print("\nERROR: MAP CAN ONLY BE SAVED WHILE THE MAPPING STATE IS ACTIVE")
         return last_cmd
 
     if cmd == "map -r":
-        print("\nRESETTING MAP...")
-        sys_comm = "reset"
+        if mapping is True:
+            print("\nRESETTING MAP...")
+            sys_comm = "reset"
+        else:
+            print("\nERROR: MAP CAN ONLY BE RESET WHILE THE MAPPING STATE IS ACTIVE")
+        return last_cmd
+
+    if cmd == "capture":
+        if motion_detection is True:
+            print("\nCAPTURING IMAGE FROM CAMERA...")
+            capture = True
+            timer = rospy.get_time()
+        else:
+            print("\nERROR: IMAGES CAN ONLY BE MANUALLY CAPTURED WHILE THE PATROL STATE IS ACTIVE")
+            capture = False
         return last_cmd
 
     if cmd == "patrol -m" and last_cmd == "Standby":
@@ -77,11 +95,11 @@ def command_parser(cmd):
         return "Shutdown"
 
     if cmd == "help":
-        print("\n**************************** HELP ****************************")
+        print("\n**************************** HELP ****************************\n")
         print_usage()
         return last_cmd
     else:
-        print("\n************************ USAGE ERROR *************************")
+        print("\n************************ USAGE ERROR *************************\n")
         print_usage()
         return last_cmd
 
@@ -103,7 +121,7 @@ def print_usage():
     print("2) User must enter only valid commands")
     print("   Valid commands are:\n\tmap -m\n\tmap -a\n\tmap -s\n\tmap -r\n\tpatrol -m\n\tpatrol -a"
           "\n\tstandby\n\tshutdown\n\thelp")
-    print("****************************************************************")
+    print("\n****************************************************************")
 
 
 def shutdown_hook():
@@ -111,7 +129,7 @@ def shutdown_hook():
 
 
 def state_manager():
-    global mapping, navigation, autonomous, manual, command, sys_comm
+    global mapping, navigation, autonomous, manual, command, sys_comm, capture, timer
 
     rospy.init_node('state_manager', anonymous=False)
 
@@ -122,10 +140,11 @@ def state_manager():
     autonomous_pub = rospy.Publisher('autonomous_active', Bool, queue_size=10)
     manual_pub = rospy.Publisher('manual_active', Bool, queue_size=10)
     sys_pub = rospy.Publisher('syscommand', String, queue_size=10)
+    capture_pub = rospy.Publisher('cam_capture', Bool, queue_size=10)
 
     rate = rospy.Rate(10)  # 10hz
 
-    print("************************** ASR ONLINE **************************")
+    print("************************** ASR ONLINE **************************\n")
     print_usage()
 
     print_state()
@@ -142,12 +161,24 @@ def state_manager():
         autonomous_pub.publish(autonomous)
         manual_pub.publish(manual)
         sys_pub.publish(sys_comm)
+        capture_pub.publish(capture)
+
+        if capture is True:
+            time_since_capture = abs(rospy.get_time() - timer)
+            print "\nImages being captured, please wait..."
+
+            while not time_since_capture >= 3:
+                time_since_capture = abs(rospy.get_time() - timer)
+
+            print "\nImage capture complete!"
+            capture = False
+            capture_pub.publish(capture)
+            timer = 0.0
 
         if command == "Shutdown":
             rospy.signal_shutdown(shutdown_hook())
 
         rate.sleep()
-
 
 if __name__ == '__main__':
     try:

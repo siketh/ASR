@@ -3,16 +3,13 @@
 
 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/src/move_slow_and_clear.cpp.o
  /home/trevor/ROS/catkin_ws/devel/include/costmap_2d/Costmap2DConfig.h
- /home/trevor/ROS/catkin_ws/devel/include/costmap_2d/GenericPluginConfig.h
  /home/trevor/ROS/catkin_ws/devel/include/costmap_2d/ObstaclePluginConfig.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/cost_values.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d_ros.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_layer.h
- /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_math.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/footprint.h
- /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/footprint_layer.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/layer.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/layered_costmap.h
  /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/observation.h

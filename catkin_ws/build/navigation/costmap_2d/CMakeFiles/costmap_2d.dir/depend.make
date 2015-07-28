@@ -106,7 +106,6 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: 
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: /opt/ros/indigo/include/tf/transform_datatypes.h
 
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /home/trevor/ROS/catkin_ws/devel/include/costmap_2d/Costmap2DConfig.h
-navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/array_parser.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/cost_values.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
@@ -142,6 +141,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/r
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h
@@ -383,6 +383,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/ros/time.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/ros/types.h
 
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/array_parser.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_math.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/footprint.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/src/footprint.cpp
@@ -391,6 +392,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/in
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/ros/assert.h
@@ -445,6 +447,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/in
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/ros/wall_timer.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/ros/wall_timer_options.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/cost_values.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/costmap_2d.h
@@ -569,6 +572,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h

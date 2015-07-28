@@ -62,6 +62,7 @@ navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/PointStamped.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/geometry_msgs/Pose.h
  /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
  /opt/ros/indigo/include/geometry_msgs/Quaternion.h
@@ -73,6 +74,13 @@ navigation/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o
  /opt/ros/indigo/include/geometry_msgs/Vector3.h
  /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
  /opt/ros/indigo/include/map_msgs/OccupancyGridUpdate.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseAction.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseActionFeedback.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseActionGoal.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseActionResult.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseFeedback.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseGoal.h
+ /opt/ros/indigo/include/move_base_msgs/MoveBaseResult.h
  /opt/ros/indigo/include/nav_msgs/GetPlan.h
  /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
  /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h

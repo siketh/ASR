@@ -53,6 +53,7 @@ navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/inclu
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PointStamped.h
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Pose.h
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
 navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Quaternion.h

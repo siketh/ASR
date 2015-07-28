@@ -227,6 +227,7 @@ class DEFAULT
         (*_i)->getValue(config, val);
 
         if("enabled"==(*_i)->name){enabled = boost::any_cast<bool>(val);}
+        if("footprint_clearing_enabled"==(*_i)->name){footprint_clearing_enabled = boost::any_cast<bool>(val);}
         if("max_obstacle_height"==(*_i)->name){max_obstacle_height = boost::any_cast<double>(val);}
         if("origin_z"==(*_i)->name){origin_z = boost::any_cast<double>(val);}
         if("z_resolution"==(*_i)->name){z_resolution = boost::any_cast<double>(val);}
@@ -238,6 +239,7 @@ class DEFAULT
     }
 
     bool enabled;
+bool footprint_clearing_enabled;
 double max_obstacle_height;
 double origin_z;
 double z_resolution;
@@ -256,6 +258,8 @@ int combination_method;
 
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       bool enabled;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      bool footprint_clearing_enabled;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double max_obstacle_height;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -416,6 +420,16 @@ VoxelPluginConfig::GroupDescription<VoxelPluginConfig::DEFAULT, VoxelPluginConfi
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<bool>("enabled", "bool", 0, "Whether to use this plugin or not", "", &VoxelPluginConfig::enabled)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.footprint_clearing_enabled = 0;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.footprint_clearing_enabled = 1;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.footprint_clearing_enabled = 1;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<bool>("footprint_clearing_enabled", "bool", 0, "Whether to clear the robot's footprint of lethal obstacles", "", &VoxelPluginConfig::footprint_clearing_enabled)));
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<bool>("footprint_clearing_enabled", "bool", 0, "Whether to clear the robot's footprint of lethal obstacles", "", &VoxelPluginConfig::footprint_clearing_enabled)));
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.max_obstacle_height = 0.0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.max_obstacle_height = 50.0;
@@ -482,9 +496,9 @@ VoxelPluginConfig::GroupDescription<VoxelPluginConfig::DEFAULT, VoxelPluginConfi
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.combination_method = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 15, 'description': 'b', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 16, 'description': 'a', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
+      Default.abstract_parameters.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 15, 'description': 'b', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 16, 'description': 'a', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
+      __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
 //#line 233 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
 //#line 233 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -564,9 +578,9 @@ VoxelPluginConfig::GroupDescription<VoxelPluginConfig::DEFAULT, VoxelPluginConfi
     return statics;
   }
 
-//#line 15 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
-      const int VoxelPlugin_Overwrite = 0;
 //#line 16 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
+      const int VoxelPlugin_Overwrite = 0;
+//#line 17 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
       const int VoxelPlugin_Maximum = 1;
 }
 

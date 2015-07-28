@@ -227,12 +227,14 @@ class DEFAULT
         (*_i)->getValue(config, val);
 
         if("enabled"==(*_i)->name){enabled = boost::any_cast<bool>(val);}
+        if("footprint_clearing_enabled"==(*_i)->name){footprint_clearing_enabled = boost::any_cast<bool>(val);}
         if("max_obstacle_height"==(*_i)->name){max_obstacle_height = boost::any_cast<double>(val);}
         if("combination_method"==(*_i)->name){combination_method = boost::any_cast<int>(val);}
       }
     }
 
     bool enabled;
+bool footprint_clearing_enabled;
 double max_obstacle_height;
 int combination_method;
 
@@ -246,6 +248,8 @@ int combination_method;
 
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       bool enabled;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      bool footprint_clearing_enabled;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double max_obstacle_height;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -396,6 +400,16 @@ ObstaclePluginConfig::GroupDescription<ObstaclePluginConfig::DEFAULT, ObstaclePl
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<bool>("enabled", "bool", 0, "Whether to apply this plugin or not", "", &ObstaclePluginConfig::enabled)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.footprint_clearing_enabled = 0;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.footprint_clearing_enabled = 1;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.footprint_clearing_enabled = 1;
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<bool>("footprint_clearing_enabled", "bool", 0, "Whether to clear the robot's footprint of lethal obstacles", "", &ObstaclePluginConfig::footprint_clearing_enabled)));
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<bool>("footprint_clearing_enabled", "bool", 0, "Whether to clear the robot's footprint of lethal obstacles", "", &ObstaclePluginConfig::footprint_clearing_enabled)));
+//#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.max_obstacle_height = 0.0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.max_obstacle_height = 50.0;
@@ -412,9 +426,9 @@ ObstaclePluginConfig::GroupDescription<ObstaclePluginConfig::DEFAULT, ObstaclePl
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.combination_method = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 10, 'description': 'Overwrite values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 11, 'description': 'Take the maximum of the values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}, {'srcline': 12, 'description': 'Do nothing', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 99, 'ctype': 'int', 'type': 'int', 'name': 'Nothing'}]}", &ObstaclePluginConfig::combination_method)));
+      Default.abstract_parameters.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 11, 'description': 'Overwrite values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 12, 'description': 'Take the maximum of the values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}, {'srcline': 13, 'description': 'Do nothing', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 99, 'ctype': 'int', 'type': 'int', 'name': 'Nothing'}]}", &ObstaclePluginConfig::combination_method)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 10, 'description': 'Overwrite values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 11, 'description': 'Take the maximum of the values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}, {'srcline': 12, 'description': 'Do nothing', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 99, 'ctype': 'int', 'type': 'int', 'name': 'Nothing'}]}", &ObstaclePluginConfig::combination_method)));
+      __param_descriptions__.push_back(ObstaclePluginConfig::AbstractParamDescriptionConstPtr(new ObstaclePluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 11, 'description': 'Overwrite values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 12, 'description': 'Take the maximum of the values', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}, {'srcline': 13, 'description': 'Do nothing', 'srcfile': '/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg', 'cconsttype': 'const int', 'value': 99, 'ctype': 'int', 'type': 'int', 'name': 'Nothing'}]}", &ObstaclePluginConfig::combination_method)));
 //#line 233 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
 //#line 233 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -494,11 +508,11 @@ ObstaclePluginConfig::GroupDescription<ObstaclePluginConfig::DEFAULT, ObstaclePl
     return statics;
   }
 
-//#line 10 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg"
-      const int ObstaclePlugin_Overwrite = 0;
 //#line 11 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg"
-      const int ObstaclePlugin_Maximum = 1;
+      const int ObstaclePlugin_Overwrite = 0;
 //#line 12 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg"
+      const int ObstaclePlugin_Maximum = 1;
+//#line 13 "/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/cfg/ObstaclePlugin.cfg"
       const int ObstaclePlugin_Nothing = 99;
 }
 

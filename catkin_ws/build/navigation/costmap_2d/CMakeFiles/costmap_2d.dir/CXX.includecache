@@ -67,6 +67,8 @@ costmap_2d/footprint.h
 -
 geometry_msgs/Polygon.h
 -
+geometry_msgs/PolygonStamped.h
+-
 dynamic_reconfigure/server.h
 -
 pluginlib/class_loader.h
@@ -94,6 +96,8 @@ geometry_msgs/Point.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
+-
+geometry_msgs/PolygonStamped.h
 -
 geometry_msgs/Point.h
 -
@@ -179,8 +183,6 @@ costmap_2d/cost_values.h
 -
 
 /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/src/costmap_2d_ros.cpp
-costmap_2d/array_parser.h
-/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/src/costmap_2d/array_parser.h
 costmap_2d/layered_costmap.h
 -
 costmap_2d/costmap_2d_ros.h
@@ -212,6 +214,8 @@ boost/foreach.hpp
 boost/algorithm/string.hpp
 -
 costmap_2d/footprint.h
+-
+costmap_2d/array_parser.h
 -
 geometry_msgs/Point32.h
 -
@@ -626,6 +630,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 geometry_msgs/Point32.h
+-
+
+/opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Polygon.h
 -
 
 /opt/ros/indigo/include/geometry_msgs/Pose.h

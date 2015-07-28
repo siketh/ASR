@@ -49,32 +49,9 @@ include navigation/costmap_2d/CMakeFiles/layers.dir/progress.make
 # Include the compile flags for this target's objects.
 include navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/footprint_layer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o"
-	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/footprint_layer.cpp
-
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layers.dir/plugins/footprint_layer.cpp.i"
-	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/footprint_layer.cpp > CMakeFiles/layers.dir/plugins/footprint_layer.cpp.i
-
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layers.dir/plugins/footprint_layer.cpp.s"
-	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/footprint_layer.cpp -o CMakeFiles/layers.dir/plugins/footprint_layer.cpp.s
-
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.requires:
-.PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.requires
-
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.provides: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.requires
-	$(MAKE) -f navigation/costmap_2d/CMakeFiles/layers.dir/build.make navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.provides.build
-.PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.provides
-
-navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.provides.build: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o
-
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/inflation_layer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o"
 	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/inflation_layer.cpp
 
@@ -97,7 +74,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o.provid
 
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/obstacle_layer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o"
 	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/obstacle_layer.cpp
 
@@ -120,7 +97,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o.provide
 
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/static_layer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o"
 	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/plugins/static_layer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/static_layer.cpp
 
@@ -143,7 +120,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o.provides.
 
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 navigation/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/voxel_layer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o"
 	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/voxel_layer.cpp
 
@@ -166,7 +143,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o.provides.b
 
 navigation/costmap_2d/CMakeFiles/layers.dir/src/observation_buffer.cpp.o: navigation/costmap_2d/CMakeFiles/layers.dir/flags.make
 navigation/costmap_2d/CMakeFiles/layers.dir/src/observation_buffer.cpp.o: /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/src/observation_buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/trevor/ROS/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object navigation/costmap_2d/CMakeFiles/layers.dir/src/observation_buffer.cpp.o"
 	cd /home/trevor/ROS/catkin_ws/build/navigation/costmap_2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/layers.dir/src/observation_buffer.cpp.o -c /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/src/observation_buffer.cpp
 
@@ -189,7 +166,6 @@ navigation/costmap_2d/CMakeFiles/layers.dir/src/observation_buffer.cpp.o.provide
 
 # Object files for target layers
 layers_OBJECTS = \
-"CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o" \
 "CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o" \
 "CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o" \
 "CMakeFiles/layers.dir/plugins/static_layer.cpp.o" \
@@ -199,7 +175,6 @@ layers_OBJECTS = \
 # External object files for target layers
 layers_EXTERNAL_OBJECTS =
 
-/home/trevor/ROS/catkin_ws/devel/lib/liblayers.so: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o
 /home/trevor/ROS/catkin_ws/devel/lib/liblayers.so: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o
 /home/trevor/ROS/catkin_ws/devel/lib/liblayers.so: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o
 /home/trevor/ROS/catkin_ws/devel/lib/liblayers.so: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o
@@ -325,7 +300,6 @@ layers_EXTERNAL_OBJECTS =
 navigation/costmap_2d/CMakeFiles/layers.dir/build: /home/trevor/ROS/catkin_ws/devel/lib/liblayers.so
 .PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/build
 
-navigation/costmap_2d/CMakeFiles/layers.dir/requires: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o.requires
 navigation/costmap_2d/CMakeFiles/layers.dir/requires: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o.requires
 navigation/costmap_2d/CMakeFiles/layers.dir/requires: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o.requires
 navigation/costmap_2d/CMakeFiles/layers.dir/requires: navigation/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o.requires

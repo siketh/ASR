@@ -81,6 +81,8 @@ costmap_2d/footprint.h
 -
 geometry_msgs/Polygon.h
 -
+geometry_msgs/PolygonStamped.h
+-
 dynamic_reconfigure/server.h
 -
 pluginlib/class_loader.h
@@ -98,6 +100,8 @@ costmap_2d/layered_costmap.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
+-
+geometry_msgs/PolygonStamped.h
 -
 geometry_msgs/Point.h
 -
@@ -512,6 +516,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 geometry_msgs/Point32.h
+-
+
+/opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Polygon.h
 -
 
 /opt/ros/indigo/include/geometry_msgs/Pose.h

@@ -1,18 +1,47 @@
 #!/usr/bin/env python
 
 import cv2, rospy, roslib
-roslib.load_manifest('asr')
-import sys, time
-import numpy as np
-from std_msgs.msg import String
+import time, numpy as np
+from std_msgs.msg import String, Bool
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
+roslib.load_manifest('asr')
+
+state = None
+motion_detection = False
+camera_img = None
+bridge = CvBridge()
+
+def state_callback(data):
+    global state
+
+    state = data.data
+    if state == "Shutdown":
+        rospy.signal_shutdown(shutdown_hook())
+
+
+def shutdown_hook():
+    print("\n...MOTION DETECTOR SHUTTING DOWN...")
+
+
+def image_callback(data):
+    global camera_img, bridge
+
+    try:
+        camera_img = bridge.imgmsg_to_cv2(data, "bgr8")
+        image_sub.unregister()
+    except CvBridgeError, e:
+        print e
+
+
+def md_callback(data):
+    global motion_detection
+    motion_detection = data.data
 
 
 # motion tracking function which detects largest contour in thresholded/blurred image and draws a bounding target
 # around it
 def track_motion(t_b_img, bgr_img):
-    #global img_index
 
     t_b = t_b_img.copy()
     bgr = bgr_img.copy()
@@ -34,7 +63,6 @@ def track_motion(t_b_img, bgr_img):
         (x, y), radius = cv2.minEnclosingCircle(largest_con)
         center = (int(x), int(y))
         text_center = (int(x-125), int(y+100))
-        radius = int(radius)
 
         # draw crosshair on image with text indicating the centroid of motion
         final_img = cv2.circle(bgr, center, 50, (0, 255, 0), 2)
@@ -43,7 +71,7 @@ def track_motion(t_b_img, bgr_img):
         final_img = cv2.line(bgr, center, (int(x-75), int(y)), (0, 255, 0), 2)
         final_img = cv2.line(bgr, center, (int(x+75), int(y)), (0, 255, 0), 2)
         final_img = cv2.putText(bgr, "MOTION DETECTED: " + str(center), text_center, 1, 1, (0, 255, 0), 2)
-        final_img = cv2.putText(bgr, str(now), (25,25), 1, 1, (0, 255, 0), 2)
+        final_img = cv2.putText(bgr, str(now), (25, 25), 1, 1, (0, 255, 0), 2)
 
         alert_pub.publish("MOTION DETECTED: " + str(now))
 
@@ -56,7 +84,7 @@ def track_motion(t_b_img, bgr_img):
 
     else:
         alert_pub.publish("ALL QUIET: " + str(now))
-        final_img = cv2.putText(bgr, str(now), (25,25), 1, 1, (0, 255, 0), 2)
+        final_img = cv2.putText(bgr, str(now), (25, 25), 1, 1, (0, 255, 0), 2)
 
     # return the image
     return final_img
@@ -69,88 +97,89 @@ def get_diff_img(t0, t1, t2):
     return cv2.bitwise_and(d1, d2)
 
 
-def callback(data):
-    global camera_img, bridge
-
-    try:
-        camera_img = bridge.imgmsg_to_cv2(data, "bgr8")
-        image_sub.unregister()
-    except CvBridgeError, e:
-        print e
-
-
 def motion_detector():
-    global camera_img, image_sub, alert_pub, motion_pub, bridge, img_index
+    global camera_img, image_sub, alert_pub, motion_pub, bridge
 
-    camera_img = None
-    bridge = CvBridge()
-    threshold = 30
+    threshold = 40
     blur = (10, 10)
-    #img_index = 0
+    initialized = False
 
     rospy.init_node('motion_detector', anonymous=False)
 
-    image_sub = rospy.Subscriber("/camera/rgb/image_color", Image, callback, queue_size=10)
-    detection_pub = rospy.Publisher("/motion_detection_feed", Image, queue_size=10)
+    rospy.Subscriber("current_state", String, state_callback, queue_size=10)
+    rospy.Subscriber("md_active", Bool, md_callback, queue_size=10)
+    image_sub = rospy.Subscriber("/camera/rgb/image_color", Image, image_callback, queue_size=10)
     alert_pub = rospy.Publisher("/user_alerts", String, queue_size=10)
     motion_pub = rospy.Publisher("/motion_image", Image, queue_size=10)
+    detection_pub = rospy.Publisher("/motion_detection_feed", Image, queue_size=10)
 
-    rate = rospy.Rate(10) # 120hz
-
-    while camera_img is None:
-        print "Waiting for camera frames..."
-
-    bgr_image = camera_img.copy()
-
-    # grab 3 identical images to initialize
-    t_minus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
-    t = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
-    t_plus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
+    rate = rospy.Rate(10)  # 120hz
 
     while not rospy.is_shutdown():
 
-        # get differential image
-        diff_img = get_diff_img(t_minus, t, t_plus)
+        if motion_detection is True and not initialized:
 
-        # perform thresholding and blurring
-        na, thresh_img = cv2.threshold(diff_img, threshold, 255, cv2.THRESH_BINARY)
-        blur_img = cv2.blur(thresh_img, blur)
+            while camera_img is None:
+                print "Waiting for camera frames..."
 
-        # perform thresholding again on blurred image
-        na, blur_thresh_img = cv2.threshold(blur_img, threshold, 255, cv2.THRESH_BINARY)
+            bgr_image = camera_img.copy()
 
-        # create motion image
-        detection_img = track_motion(blur_thresh_img, bgr_image)
+            # grab 3 identical images to initialize
+            t_minus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
+            t = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
+            t_plus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
 
-        # show/publish motion image
-        try:
-            img = bridge.cv2_to_imgmsg(detection_img, "bgr8")
-            detection_pub.publish(img)
-        except CvBridgeError, e:
-            print e
+            initialized = True
 
-        #cv2.imshow("MOTION TRACKING", detection_img)
-        #cv2.waitKey(3)
+        if state == "Standby" or state == "Shutdown":
+            initialized = False
 
-        # DEBUG
-        #cv2.imshow("BGR IMAGE", img)
-        #cv2.imshow("DIFF IMAGE", diff_img)
-        #cv2.imshow("THRESH IMAGE", thresh_img)
-        #cv2.imshow("BLUR IMAGE", blur_img)
-        #cv2.imshow("BLUR + THRESH IMAGE", blur_thresh_img)
-        #cv2.waitKey(3)
+        elif motion_detection is True and initialized:
 
-        # retrieve a bgr image from the kinect
-        image_sub = rospy.Subscriber("camera/rgb/image_color", Image, callback, queue_size=10)
+            # get differential image
+            diff_img = get_diff_img(t_minus, t, t_plus)
 
-        bgr_image = camera_img.copy()
+            # perform thresholding and blurring
+            na, thresh_img = cv2.threshold(diff_img, threshold, 255, cv2.THRESH_BINARY)
+            blur_img = cv2.blur(thresh_img, blur)
 
-        # increment the images
-        t_minus = t
-        t = t_plus
-        t_plus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
+            # perform thresholding again on blurred image
+            na, blur_thresh_img = cv2.threshold(blur_img, threshold, 255, cv2.THRESH_BINARY)
 
-    rate.sleep()
+            # create motion image
+            detection_img = track_motion(blur_thresh_img, bgr_image)
+
+            # show/publish motion image
+            try:
+                img = bridge.cv2_to_imgmsg(detection_img, "bgr8")
+                detection_pub.publish(img)
+            except CvBridgeError, e:
+                print e
+
+            #cv2.imshow("MOTION TRACKING", detection_img)
+            #cv2.waitKey(3)
+
+            # DEBUG
+            #cv2.imshow("BGR IMAGE", img)
+            #cv2.imshow("DIFF IMAGE", diff_img)
+            #cv2.imshow("THRESH IMAGE", thresh_img)
+            #cv2.imshow("BLUR IMAGE", blur_img)
+            #cv2.imshow("BLUR + THRESH IMAGE", blur_thresh_img)
+            #cv2.waitKey(3)
+
+            # retrieve a bgr image from the kinect
+            image_sub = rospy.Subscriber("camera/rgb/image_color", Image, image_callback, queue_size=10)
+
+            bgr_image = camera_img.copy()
+
+            # increment the images
+            t_minus = t
+            t = t_plus
+            t_plus = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2GRAY)
+
+        rate.sleep()
+
+    rospy.spin()
 
 if __name__ == '__main__':
     try:

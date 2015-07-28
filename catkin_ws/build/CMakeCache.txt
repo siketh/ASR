@@ -260,6 +260,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//Dependencies for the target
+ElevationMapping_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
 //Path to a file.
 FLANN_INCLUDE_DIRS:PATH=/usr/include
 
@@ -1130,7 +1133,7 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //Path to a file.
-_file_name:FILEPATH=/home/trevor/ROS/catkin_ws/src/slam_gmapping/gmapping/test/basic_localization_laser_different_beamcount.test
+_file_name:FILEPATH=/home/trevor/ROS/catkin_ws/src/navigation/clear_costmap_recovery/test/clear_tests.launch
 
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
@@ -1157,10 +1160,25 @@ amcl_sensors_LIB_DEPENDS:STATIC=general;amcl_map;general;amcl_pf;
 angles_DIR:PATH=/opt/ros/indigo/share/angles/cmake
 
 //Value Computed by CMake
+asr_2dnav_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/asr_nav
+
+//Value Computed by CMake
+asr_2dnav_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/asr_nav
+
+//Value Computed by CMake
 asr_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/asr
 
 //Value Computed by CMake
 asr_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/asr
+
+//Value Computed by CMake
+asr_nav_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/asr_nav
+
+//Value Computed by CMake
+asr_nav_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/asr_nav
+
+//The directory containing a CMake configuration file for asr_odom_configuration_dep.
+asr_odom_configuration_dep_DIR:PATH=asr_odom_configuration_dep_DIR-NOTFOUND
 
 //Value Computed by CMake
 base_local_planner_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/navigation/base_local_planner
@@ -1308,6 +1326,66 @@ hector_compressed_map_transport_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/bui
 hector_compressed_map_transport_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_slam/hector_compressed_map_transport
 
 //Value Computed by CMake
+hector_costmap_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_costmap
+
+//Value Computed by CMake
+hector_costmap_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_costmap
+
+//Value Computed by CMake
+hector_driving_aid_markers_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_driving_aid_markers
+
+//Value Computed by CMake
+hector_driving_aid_markers_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_driving_aid_markers
+
+//Value Computed by CMake
+hector_elevation_mapping_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_elevation_mapping
+
+//Value Computed by CMake
+hector_elevation_mapping_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_elevation_mapping
+
+//Value Computed by CMake
+hector_elevation_msgs_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_elevation_msgs
+
+//The directory containing a CMake configuration file for hector_elevation_msgs.
+hector_elevation_msgs_DIR:PATH=/home/trevor/ROS/catkin_ws/devel/share/hector_elevation_msgs/cmake
+
+//Value Computed by CMake
+hector_elevation_msgs_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_elevation_msgs
+
+//Value Computed by CMake
+hector_elevation_visualization_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_elevation_visualization
+
+//Value Computed by CMake
+hector_elevation_visualization_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_elevation_visualization
+
+//Dependencies for the target
+hector_exploration_base_global_planner_plugin_LIB_DEPENDS:STATIC=general;hector_exploration_planner;
+
+//Value Computed by CMake
+hector_exploration_controller_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_exploration_controller
+
+//Value Computed by CMake
+hector_exploration_controller_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_exploration_controller
+
+//Value Computed by CMake
+hector_exploration_node_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_exploration_node
+
+//Value Computed by CMake
+hector_exploration_node_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_exploration_node
+
+//Value Computed by CMake
+hector_exploration_planner_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_exploration_planner
+
+//The directory containing a CMake configuration file for hector_exploration_planner.
+hector_exploration_planner_DIR:PATH=/home/trevor/ROS/catkin_ws/devel/share/hector_exploration_planner/cmake
+
+//Dependencies for target
+hector_exploration_planner_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+hector_exploration_planner_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_exploration_planner
+
+//Value Computed by CMake
 hector_geotiff_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_slam/hector_geotiff
 
 //The directory containing a CMake configuration file for hector_geotiff.
@@ -1377,6 +1455,18 @@ hector_nav_msgs_DIR:PATH=/home/trevor/ROS/catkin_ws/devel/share/hector_nav_msgs/
 hector_nav_msgs_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_slam/hector_nav_msgs
 
 //Value Computed by CMake
+hector_path_follower_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_navigation/hector_path_follower
+
+//The directory containing a CMake configuration file for hector_path_follower.
+hector_path_follower_DIR:PATH=/home/trevor/ROS/catkin_ws/devel/share/hector_path_follower/cmake
+
+//Dependencies for target
+hector_path_follower_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+hector_path_follower_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/hector_navigation/hector_path_follower
+
+//Value Computed by CMake
 hector_slam_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/hector_slam/hector_slam
 
 //Value Computed by CMake
@@ -1407,7 +1497,7 @@ laser_geometry_DIR:PATH=/opt/ros/indigo/share/laser_geometry/cmake
 layers_LIB_DEPENDS:STATIC=general;costmap_2d;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libkdl_conversions.so
+lib:FILEPATH=/opt/ros/indigo/lib/libtopic_tools.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/indigo/share/map_msgs/cmake
@@ -1433,6 +1523,8 @@ message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 //Value Computed by CMake
 move_base_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/navigation/move_base
 
+move_base_DIR:PATH=
+
 //Dependencies for the target
 move_base_LIB_DEPENDS:STATIC=general;costmap_2d;general;layers;general;/opt/ros/indigo/lib/liblaser_geometry.so;general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;voxel_grid;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
 
@@ -1447,6 +1539,9 @@ move_slow_and_clear_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboos
 
 //Value Computed by CMake
 move_slow_and_clear_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/navigation/move_slow_and_clear
+
+//The directory containing a CMake configuration file for my_odom_configuration_dep.
+my_odom_configuration_dep_DIR:PATH=my_odom_configuration_dep_DIR-NOTFOUND
 
 //Value Computed by CMake
 nav_core_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/navigation/nav_core
@@ -1501,6 +1596,30 @@ robot_pose_ekf_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/navigation/rob
 
 //Value Computed by CMake
 robot_pose_ekf_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/navigation/robot_pose_ekf
+
+//Value Computed by CMake
+ros_arduino_bridge_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/ros_arduino_bridge/ros_arduino_bridge
+
+//Value Computed by CMake
+ros_arduino_bridge_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/ros_arduino_bridge/ros_arduino_bridge
+
+//Value Computed by CMake
+ros_arduino_firmware_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/ros_arduino_bridge/ros_arduino_firmware
+
+//Value Computed by CMake
+ros_arduino_firmware_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/ros_arduino_bridge/ros_arduino_firmware
+
+//Value Computed by CMake
+ros_arduino_msgs_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/ros_arduino_bridge/ros_arduino_msgs
+
+//Value Computed by CMake
+ros_arduino_msgs_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/ros_arduino_bridge/ros_arduino_msgs
+
+//Value Computed by CMake
+ros_arduino_python_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/ros_arduino_bridge/ros_arduino_python
+
+//Value Computed by CMake
+ros_arduino_python_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/ros_arduino_bridge/ros_arduino_python
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/indigo/share/rosbag/cmake
@@ -1564,6 +1683,12 @@ smclib_DIR:PATH=/opt/ros/indigo/share/smclib/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
+
+//Value Computed by CMake
+teleop_twist_keyboard_BINARY_DIR:STATIC=/home/trevor/ROS/catkin_ws/build/teleop_twist_keyboard
+
+//Value Computed by CMake
+teleop_twist_keyboard_SOURCE_DIR:STATIC=/home/trevor/ROS/catkin_ws/src/teleop_twist_keyboard
 
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/indigo/share/tf2/cmake
@@ -1777,7 +1902,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=18
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=51
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2525,6 +2650,10 @@ Q_WS_QWS:INTERNAL=
 Q_WS_WIN:INTERNAL=
 //Have symbol Q_WS_X11
 Q_WS_X11:INTERNAL=1
+//Last used BOOST_INCLUDEDIR value.
+_BOOST_INCLUDEDIR_LAST:INTERNAL=/usr/include
+//Last used Boost_ADDITIONAL_VERSIONS value.
+_Boost_ADDITIONAL_VERSIONS_LAST:INTERNAL=1.47;1.47.0
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=date_time;filesystem;iostreams;serialization;signals;system;thread
 //Last used Boost_INCLUDE_DIR value.

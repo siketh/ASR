@@ -12,6 +12,7 @@ navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /o
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point32.h
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/Polygon.h
+navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/advertise_service_options.h
 navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o: /opt/ros/indigo/include/ros/assert.h

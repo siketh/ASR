@@ -1,5 +1,4 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/layers.dir/plugins/footprint_layer.cpp.o"
   "CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o"
   "CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o"
   "CMakeFiles/layers.dir/plugins/static_layer.cpp.o"

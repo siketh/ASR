@@ -38,6 +38,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_node.dir/src/costmap_2d_node.cpp.o
  /opt/ros/indigo/include/geometry_msgs/Point32.h
  /opt/ros/indigo/include/geometry_msgs/PointStamped.h
  /opt/ros/indigo/include/geometry_msgs/Polygon.h
+ /opt/ros/indigo/include/geometry_msgs/PolygonStamped.h
  /opt/ros/indigo/include/geometry_msgs/Pose.h
  /opt/ros/indigo/include/geometry_msgs/PoseStamped.h
  /opt/ros/indigo/include/geometry_msgs/Quaternion.h

@@ -149,48 +149,6 @@ depend:
 	cd /home/trevor/ROS/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/trevor/ROS/catkin_ws/build && $(MAKE) -f hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make hector_slam/hector_marker_drawing/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -204,9 +162,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_py"
 .PHONY : help
 
 

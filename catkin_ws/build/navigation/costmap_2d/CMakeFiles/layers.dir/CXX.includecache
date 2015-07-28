@@ -135,29 +135,11 @@ ros/ros.h
 -
 geometry_msgs/Polygon.h
 -
+geometry_msgs/PolygonStamped.h
+-
 geometry_msgs/Point.h
 -
 geometry_msgs/Point32.h
--
-
-/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/footprint_layer.h
-ros/ros.h
--
-costmap_2d/layer.h
--
-costmap_2d/layered_costmap.h
--
-costmap_2d/costmap_math.h
--
-costmap_2d/GenericPluginConfig.h
--
-dynamic_reconfigure/server.h
--
-nav_msgs/OccupancyGrid.h
--
-geometry_msgs/Polygon.h
--
-geometry_msgs/PolygonStamped.h
 -
 
 /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/inflation_layer.h
@@ -257,7 +239,7 @@ dynamic_reconfigure/server.h
 -
 costmap_2d/ObstaclePluginConfig.h
 -
-costmap_2d/footprint_layer.h
+costmap_2d/footprint.h
 -
 
 /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/include/costmap_2d/static_layer.h
@@ -312,18 +294,6 @@ costmap_2d/VoxelPluginConfig.h
 costmap_2d/obstacle_layer.h
 -
 voxel_grid/voxel_grid.h
--
-
-/home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/footprint_layer.cpp
-costmap_2d/footprint_layer.h
--
-costmap_2d/footprint.h
--
-string
--
-sstream
--
-pluginlib/class_list_macros.h
 -
 
 /home/trevor/ROS/catkin_ws/src/navigation/costmap_2d/plugins/inflation_layer.cpp
