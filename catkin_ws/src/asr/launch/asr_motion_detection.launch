@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-
+<!--
 <node pkg="rviz" type="rviz" name="rviz" respawn="true" args="-d $(find asr)/rviz_cfg/asr_patrol.rviz"/>
-
+-->
 </launch>

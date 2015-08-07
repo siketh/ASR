@@ -11,9 +11,10 @@ state = None
 alert = None
 motion_detection = False
 capture = False
-sender = "asr.one.zero@gmail.com"
+submit_alerts = False
+sender = ""
 receiver = sender
-connection = yagmail.SMTP(sender)
+connection = None
 motion_img_index = 0
 capture_img_index = 0
 motion_images = []
@@ -47,13 +48,15 @@ def capture_command_callback(data):
     capture = data.data
 
 
+def submit_callback(data):
+    global submit_alerts
+    submit_alerts = data.data
+
+
 def motion_callback(data):
     global motion_img_index, motion_images, bridge, sender, receiver, connection
 
-    print connection
-
     now = time.strftime("%c")
-
     try:
         motion_img = bridge.imgmsg_to_cv2(data, "bgr8")
 
@@ -69,8 +72,8 @@ def motion_callback(data):
             img2 = motion_images[motion_img_index-2]
             img1 = motion_images[motion_img_index-3]
             img0 = motion_images[motion_img_index-4]
-            connection.send(receiver, subject="MOTION DETECTED: " + str(now), contents=[img0, img1, img2,
-                                                                                        img3, img4])
+            if connection is not None:
+                connection.send(receiver, subject="MOTION DETECTED: " + str(now), contents=[img0, img1, img2, img3, img4])
     except CvBridgeError, e:
         print e
 
@@ -81,8 +84,6 @@ def motion_callback(data):
 
 def capture_callback(data):
     global capture_img_index, capture, captured_images, bridge, sender, receiver, connection
-
-    print connection
 
     if capture is True:
         now = time.strftime("%c")
@@ -98,7 +99,8 @@ def capture_callback(data):
 
                 img0 = captured_images[capture_img_index]
 
-                connection.send(receiver, subject="IMAGE CAPTURED: " + str(now), contents=[img0])
+                if connection is not None:
+                    connection.send(receiver, subject="IMAGE CAPTURED: " + str(now), contents=[img0])
 
         except CvBridgeError, e:
             print e
@@ -109,7 +111,7 @@ def capture_callback(data):
 
 
 def alert_reporter():
-    global alert, capture, capture_img_index
+    global alert, capture, capture_img_index, sender, receiver, connection
 
     md_initialized = False
     cap_initialized = False
@@ -120,12 +122,22 @@ def alert_reporter():
     rospy.Subscriber("user_alerts", String, alerts_callback, queue_size=10)
     rospy.Subscriber("md_active", Bool, md_callback, queue_size=10)
     rospy.Subscriber("cam_capture", Bool, capture_command_callback, queue_size=10)
+    rospy.Subscriber("submit_alerts", Bool, submit_callback, queue_size=10)
 
     rate = rospy.Rate(10)  # 10hz
 
     print("********** [ALERT REPORTER] **********")
 
     while not rospy.is_shutdown():
+        if not submit_alerts:
+            sender = ""
+            receiver = sender
+            connection = None
+        elif submit_alerts:
+            sender = "asr.one.zero@gmail.com"
+            receiver = sender
+            connection = yagmail.SMTP(sender)
+
         if motion_detection is True:
             if alert is None and not md_initialized:
                 print "Waiting for connection to alerts..."
@@ -147,19 +159,20 @@ def alert_reporter():
                     print "Capturing images from camera..."
                 if capture is False:
                     print "Listening for 'capture' command..."
-
-        if motion_detection is False and md_initialized:
+        elif motion_detection is False and md_initialized:
             print "Disconnecting from alerts..."
             motion_sub.unregister()
             md_initialized = False
             alert = None
             print "Disconnected from alerts..."
-        if motion_detection is False and cap_initialized:
+        elif motion_detection is False and cap_initialized:
             print "Disconnecting capture listener..."
             capture_sub.unregister()
             cap_initialized = False
             capture = None
             print "Capture listener disconnected..."
+        else:
+            print "\nALERT REPORTER INACTIVE"
 
         rate.sleep()
 

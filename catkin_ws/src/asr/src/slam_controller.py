@@ -13,11 +13,10 @@ def state_callback(data):
 def mapping_callback(data):
     global mapping
     mapping = data.data
- 
 
 
 def shutdown_hook():
-    print("\n...SYSTEM SHUTTING DOWN...")
+    print("\n...SLAM CONTROLLER SHUTTING DOWN...")
 
     if slam_process is not False:
         os.killpg(slam_process.pid, signal.SIGTERM)
@@ -40,18 +39,18 @@ def slam_controller():
     print("********** [SLAM CONTROLLER] **********")
 
     while not rospy.is_shutdown():
-        if mapping == True and launched == False:
+        if mapping and not launched:
             print("\nINITIATING SLAM")
             slam_process = subprocess.Popen(slam_cmd, stdout=subprocess.PIPE, shell=True, preexec_fn=os.setsid)
             launched = True
 
-        if mapping == False and launched == True:
+        if not mapping and launched:
             print("\nQUITTING SLAM")
             os.killpg(slam_process.pid, signal.SIGTERM)
             slam_process = False
             launched = False
 
-        if mapping == True:
+        if mapping:
             print("Performing SLAM...")
 
         rate.sleep()

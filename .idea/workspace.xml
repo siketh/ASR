@@ -6,7 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="18800ed7-e8f3-4dec-9bbf-8deade97e1c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/hector_slam" afterPath="$PROJECT_DIR$/catkin_ws/src/hector_slam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_0.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_1.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_2.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_3.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_4.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_5.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_6.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_7.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_8.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_9.png" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/pictures/motion_9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/slam_gmapping" afterPath="$PROJECT_DIR$/catkin_ws/src/slam_gmapping" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_mapping.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_mapping.launch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/rviz_cfg/asr_mapping.rviz" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/rviz_cfg/asr_mapping.rviz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_motion_detection.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_motion_detection.launch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_navigation.launch" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_navigation.launch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/rviz_cfg/asr_patrol.rviz" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/rviz_cfg/asr_patrol.rviz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py" afterPath="$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ROS.iws" />
@@ -27,96 +48,110 @@
     <favorites_list name="ROS" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="state_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-              <folding>
-                <element signature="e#23#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/navigation_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autonomous_navigation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/autonomous_navigation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82099825">
-              <caret line="257" column="23" selection-start-line="257" selection-start-column="23" selection-end-line="257" selection-end-column="23" />
-              <folding>
-                <element signature="e#23#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arduino_sensors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/arduino_sensors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manual_navigation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/manual_navigation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="velocityLogger.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/velocityLogger.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slam_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-              <folding>
-                <element signature="e#23#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="motion_detector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="autonomous_navigation.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/autonomous_navigation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#23#49#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="manual_navigation.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/manual_navigation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#242#255#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="motion_detector.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#23#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="alert_reporter.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#23#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="state_manager.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#23#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="motion_detection_controller.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="navigation_controller.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/navigation_controller.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#23#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="slam_controller.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#23#59#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,21 +180,21 @@
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_motion_detection.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_mapping.launch" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/teleop_twist_keyboard/teleop_twist_keyboard.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/teleop_twist_keyboard/asr_teleop.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/DeadReckoning.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/asr_teleop.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/nodes/arduino_node.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/manual_navigation.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/base_controller.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/navigation_controller.py" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/arduino_sensors.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/manual_navigation.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py" />
         <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/autonomous_navigation.py" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/asr/src/navigation_controller.py" />
       </list>
     </option>
   </component>
@@ -167,10 +202,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
-    <option name="y" value="52" />
-    <option name="width" value="656" />
-    <option name="height" value="715" />
+    <option name="x" value="49" />
+    <option name="y" value="24" />
+    <option name="width" value="1317" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -202,7 +237,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/catkin_ws/src/teleop_twist_keyboard/teleop_twist_keyboard.py" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/trevor/ROS/catkin_ws/src/asr/src/motion_detection_controller.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/trevor/ROS/catkin_ws/src/asr/src/slam_controller.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -478,32 +513,38 @@
       <option name="project" value="LOCAL" />
       <updated>1438104356773</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="A lot of stuff I don't have time to explain">
+      <created>1438104368765</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1438104368765</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="52" width="656" height="715" extended-state="4" />
+    <frame x="49" y="24" width="1317" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26359832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26359832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -538,12 +579,37 @@
           <line>6</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="e#23#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/launch/asr_mapping.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -828,59 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/DeadReckoning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="64" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/velocityLogger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-          <folding>
-            <element signature="e#23#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/arduino_driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20156775">
@@ -895,10 +908,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/arduino_sensors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/manual_navigation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="35" />
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="e#242#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/alert_reporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding>
+            <element signature="e#23#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#23#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/slam_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#23#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/motion_detection_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -906,33 +976,17 @@
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/navigation_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ros_arduino_bridge/ros_arduino_python/src/ros_arduino_python/arduino_sensors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/state_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
-            <element signature="e#23#39#0" expanded="true" />
+            <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/asr/src/autonomous_navigation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82099825">
-          <caret line="257" column="23" selection-start-line="257" selection-start-column="23" selection-end-line="257" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding>
             <element signature="e#23#49#0" expanded="true" />
           </folding>

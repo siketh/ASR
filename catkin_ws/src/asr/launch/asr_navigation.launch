@@ -2,6 +2,10 @@
 
 <launch>
 
-<node pkg="rviz" type="rviz" name="rviz" respawn="true" args="-d $(find asr)/rviz_cfg/asr_config.rviz"/> 
+<include file="$(find ros_arduino_python)/launch/arduino.launch"/>
+
+<node pkg="asr" type="manual_navigation.py" name="manual_navigation" respawn="true" respawn_delay="5" output="screen" launch-prefix="xterm -e"/>
+<node pkg="asr" type="autonomous_navigation.py" name="autonomous_navigation" respawn="true" respawn_delay="5"/>
+<node pkg="asr" type="navigation_controller.py" name="navigation_controller" respawn="true" respawn_delay="5"/>
 
 </launch>

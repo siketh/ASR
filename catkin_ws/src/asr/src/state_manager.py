@@ -10,13 +10,14 @@ autonomous = False
 manual = False
 motion_detection = False
 capture = False
+submit = False
 command = "Standby"
 sys_comm = ""
 timer = 0.0
 
 
 def command_parser(cmd):
-    global mapping, navigation, autonomous, manual, motion_detection, sys_comm, capture, timer
+    global mapping, navigation, autonomous, manual, motion_detection, sys_comm, capture, timer, submit
 
     last_cmd = command
 
@@ -61,6 +62,14 @@ def command_parser(cmd):
             print("\nERROR: IMAGES CAN ONLY BE MANUALLY CAPTURED WHILE THE PATROL STATE IS ACTIVE")
             capture = False
         return last_cmd
+
+    if cmd == "submit_alerts -t":
+        submit = True
+        print "\nALERTS WILL BE EMAILED AND SAVED LOCALLY"
+
+    if cmd == "submit_alerts -f":
+        print "\nALERTS WILL NOT BE EMAILED BUT THEY WILL BE SAVED LOCALLY"
+        submit = False
 
     if cmd == "patrol -m" and last_cmd == "Standby":
         mapping = False
@@ -120,7 +129,7 @@ def print_usage():
     print("1) User must execute 'standby' command before switching states")
     print("2) User must enter only valid commands")
     print("   Valid commands are:\n\tmap -m\n\tmap -a\n\tmap -s\n\tmap -r\n\tpatrol -m\n\tpatrol -a"
-          "\n\tstandby\n\tshutdown\n\thelp")
+          "\n\tsubmit_alerts -t\n\tsubmit_alerts -f\n\tstandby\n\tshutdown\n\thelp")
     print("\n****************************************************************")
 
 
@@ -129,7 +138,7 @@ def shutdown_hook():
 
 
 def state_manager():
-    global mapping, navigation, autonomous, manual, command, sys_comm, capture, timer
+    global mapping, navigation, autonomous, manual, command, sys_comm, capture, timer, submit
 
     rospy.init_node('state_manager', anonymous=False)
 
@@ -141,6 +150,7 @@ def state_manager():
     manual_pub = rospy.Publisher('manual_active', Bool, queue_size=10)
     sys_pub = rospy.Publisher('syscommand', String, queue_size=10)
     capture_pub = rospy.Publisher('cam_capture', Bool, queue_size=10)
+    submit_pub = rospy.Publisher('submit_alerts', Bool, queue_size=10)
 
     rate = rospy.Rate(10)  # 10hz
 
@@ -162,6 +172,7 @@ def state_manager():
         manual_pub.publish(manual)
         sys_pub.publish(sys_comm)
         capture_pub.publish(capture)
+        submit_pub.publish(submit)
 
         if capture is True:
             time_since_capture = abs(rospy.get_time() - timer)
